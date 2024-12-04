@@ -1,0 +1,22 @@
+::ng-deep .dx-popup-content {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  ::ng-deep .dx-popup-content .popup-inner-content {
+    padding: 20px;
+  }
+  
+  ::ng-deep .dx-popup-content .popup-image {
+    display: block;
+    width: 100px;  /* Adjust this to make the image smaller */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  ::ng-deep .dx-popup-content p {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }

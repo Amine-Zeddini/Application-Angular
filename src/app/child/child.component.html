@@ -1,0 +1,51 @@
+<!-- <div>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Title</th>
+          <th>infos</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Image</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{ customer.id}}</td>
+          <td>{{ customer.title }}</td>
+          <td>{{ customer.price }}</td>
+          <td>{{ customer.category }}</td>
+          <td>{{ customer.description }}</td>
+          <td><img [src]="customer.image" alt="{{customer.title}}" width="100"></td>
+          <td>{{ customer.rating.count}}|{{customer.rating.count}} </td>
+        </tr>
+      </tbody>
+    </table> -->
+    <!-- <div *ngIf="customer">
+    
+        <p>ID: {{ customer.id }}</p>
+        <p>Title: {{ childData?.title }}</p>
+        <p>Price: {{ childData?.price }}</p>
+        <p>Category: {{ childData?.category }}</p>
+        <p>Description: {{ childData?.description }}</p>
+        <p><img [src]="childData?.image" alt="{{childData?.title}}" width="100"></p>
+        <p>rating: {{ childData?.pricerating.rate}}|{{childData?.rating.count }}</p>
+     -->
+
+    <div *ngIf="customer">
+        <h2>Customer Details</h2>
+        <p><strong>Id:</strong> {{ customer.id }}</p>
+        <p><strong>Title:</strong> {{ customer.title }}</p>
+        <p><strong>Price:</strong> {{ customer.price }}</p>
+        <p><strong>Category:</strong> {{ customer.category }}</p>
+        <p><strong>Description:</strong> {{ customer.description }}</p>
+        <p>
+          <strong>Image:</strong>
+          <img [src]="customer.image" alt="{{ customer.title }}" width="100" />
+        </p>
+        <p><strong>Rating:</strong> {{ customer.rating.rate }} ({{ customer.rating.count }})</p> 
+    </div> 
+    <router-outlet></router-outlet>

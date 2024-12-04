@@ -1,0 +1,62 @@
+ <!-- <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.email }}</td>
+      </tr>
+    </tbody>
+  </table> -->
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Title</th>
+          <th>infos</th>
+          <!-- <th>Price</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Image</th>
+          <th>Rating</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{ customer.id}}</td>
+          <td>{{ customer.title }}</td>
+          <td><div><h1>
+            <ul class="d-flex p-0 m-0">Infos
+              <a class="nav-link d-flex p-0">
+                <button
+                  class="btn btn-outline-primary"
+                  (click)="viewCustomerDetails(customer.id)">
+                  go to child
+                </button>
+              </a>
+            </ul>
+            
+            
+          </h1></div></td>
+          <!-- <td>{{ customer.price }}</td>
+          <td>{{ customer.category }}</td>
+          <td>{{ customer.description }}</td>
+          <td><img [src]="customer.image" alt="{{customer.title}}" width="100"></td>
+          <td>{{ customer.rating.count}}|{{customer.rating.count}} </td> -->
+        </tr>
+      </tbody>
+    </table>
+   
+  </div>
+  
+   
+
+  
+ 
